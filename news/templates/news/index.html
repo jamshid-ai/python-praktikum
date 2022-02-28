@@ -1,0 +1,12 @@
+{% extends 'news/layout.html' %}
+
+{% block body %}
+
+    <h1>Daily news</h1>
+    <ul>
+        {% for post in news %}
+            <li><h2>{{ post.title }}</h2><br>{{ post.title }}</li><br>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
